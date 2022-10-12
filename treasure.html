@@ -14,107 +14,140 @@
 
 </head>
 <body>
-
-    <h1>Treasure Hunt by Lokeshreddy Donthireddy</h1>
-    <div class="container display-6">
-        <p style="color:rgb(32, 233, 149)">Click on the chests to search for treasure</p>
-    </div>
-    <div class="container border bg-dark" style="padding-top: 10px; color: rgb(208, 40, 40);">
-        <p id="chests">Number of chests checked is zero.</p>
-    </div>
-    <div class="container border bg-warning" style="padding-top: 10px; color:rgb(243, 18, 130);">
-        <p id="score">Score is unknown.</p>
-    </div>
-    <div class="container border bg-success" style="padding-top: 10px; color:rgb(230, 86, 3);">
-        <p id="help">Help report.</p>
-    </div><br>
-    <div class="container"> 
-        <div class="image-row d-flex justify-content-center">
-            <div >
-                <img src="treusehunt.jpg" alt="treasureChest" height="150" width="150">
-            </div>
-            <div >
-                <img src="treusehunt.jpg" alt="treasureChest" height="150" width="150">
-            </div>
-            <div > 
-                <img src="treusehunt.jpg" alt="treasureChest" height="150" width="150">
-            </div>
-            <div >
-                <img src="treusehunt.jpg" alt="treasureChest" height="150" width="150">
-            </div>
-            <div>
-                <img src="treusehunt.jpg" alt="treasureChest" height="150" width="150">
-            </div>
-        </div>
-        <div class="image-row d-flex justify-content-center">
-            <div>
-                <img src="treusehunt.jpg" alt="treasureChest" height="150" width="150">
-            </div>
-            <div>
-                <img src="treusehunt.jpg" alt="treasureChest" height="150" width="150">
-            </div>
-            <div >
-                <img src="treusehunt.jpg" alt="treasureChest" height="150" width="150">
-            </div>
-            <div >
-                <img src="treusehunt.jpg" alt="treasureChest" height="150" width="150">
-            </div>
-            <div >
-                <img src="treusehunt.jpg" alt="treasureChest" height="150" width="150">
-            </div>
-        </div>
-        <div class="image-row d-flex justify-content-center">
-            <div >
-                <img src="treusehunt.jpg" alt="treasureChest" height="150" width="150">
-            </div>
-            <div >
-                <img src="treusehunt.jpg" alt="treasureChest" height="150" width="150">
-            </div>
-            <div >
-                <img src="needhelp.jpg" alt="treasureChest" height="150" width="150">
-            </div>
-            <div >
-                <img src="treusehunt.jpg" alt="treasureChest" height="150" width="150">
-            </div>
-            <div >
-                <img src="treusehunt.jpg" alt="treasureChest" height="150" width="150">
-            </div>
-        </div>
-        <div class="image-row d-flex justify-content-center">
-            <div>
-                <img src="treusehunt.jpg" alt="treasureChest" height="150" width="150">
-            </div>
-            <div >
-                <img src="treusehunt.jpg" alt="treasureChest" height="150" width="150">
-            </div>
-            <div >
-                <img src="treusehunt.jpg" alt="treasureChest" height="150" width="150">
-            </div>
-            <div >
-                <img src="treusehunt.jpg" alt="treasureChest" height="150" width="150">
-            </div>
-            <div>
-                <img src="treusehunt.jpg" alt="treasureChest" height="150" width="150">
-            </div>
-        </div>   
-        <div class="image-row d-flex justify-content-center">
-            <div >
-                <img src="treusehunt.jpg" alt="treasureChest" height="150" width="150">
-            </div class="col">
-            <div>
-                <img src="treusehunt.jpg" alt="treasureChest" height="150" width="150">
-            </div>
-            <div>
-                <img src="treusehunt.jpg" alt="treasureChest" height="150" width="150">
-            </div>
-            <div>
-                <img src="treusehunt.jpg" alt="treasureChest" height="150" width="150">
-            </div>
-            <div>
-                <img src="treusehunt.jpg" alt="treasureChest" height="150" width="150">
-            </div>
-        </div>
-        </div>
+    <div class="d-flex flex-column">
+    <h2 >Treasure hunt Jaya Lakshmi Medikonda</h2>
+    <div class="p-2"><b>Click on the chests to search for treasure</b></div>
+    <div class="p-2" style="background-color:lavenderblush;" id="chests">Number of chests checked is zero</div>
+    <div class="p-2" style="background-color:lavender;" id="score">Score is unknown</div>
+    <div class="p-2" style="background-color:lavenderblush;" id="help">Help report</div>
+</div>
+<div class="container">
+    <div class="row">
+    <div class="col-sm" ><img id="0" onclick="check(id)" src="TreasureChest.jpg" alt="TresureChest" width="150" height="150" /></div>
+    <div class="col-sm" ><img id="1" onclick="check(id)" src="TreasureChest.jpg" alt="TresureChest" width="150" height="150" /></div>
+    <div class="col-sm" ><img id="2" onclick="check(id)" src="TreasureChest.jpg" alt="TresureChest" width="150" height="150" /></div>
+    <div class="col-sm" ><img id="3" onclick="check(id)" src="TreasureChest.jpg" alt="TresureChest" width="150" height="150" /></div>
+    <div class="col-sm" ><img id="4" onclick="check(id)" src="TreasureChest.jpg" alt="TresureChest" width="150" height="150" /></div>
+</div>
+</div>
+<div class="container">
+    <div class="row">
+    <div class="col-sm" ><img id="5" onclick="check(id)" src="TreasureChest.jpg" alt="TresureChest" width="150" height="150" /></div>
+    <div class="col-sm" ><img id="6" onclick="check(id)" src="TreasureChest.jpg" alt="TresureChest" width="150" height="150" /></div>
+    <div class="col-sm" ><img id="7" onclick="check(id)" src="TreasureChest.jpg" alt="TresureChest" width="150" height="150" /></div>
+    <div class="col-sm" ><img id="8" onclick="check(id)" src="TreasureChest.jpg" alt="TresureChest" width="150" height="150" /></div>
+    <div class="col-sm" ><img id="9" onclick="check(id)" src="TreasureChest.jpg" alt="TresureChest" width="150" height="150" /></div>
+</div>
+</div>
+<div class="container">
+    <div class="row">
+    <div class="col-sm" ><img id="10" onclick="check(id)"  src="TreasureChest.jpg" alt="TresureChest" width="150" height="150" /></div>
+    <div class="col-sm" ><img id="11" onclick="check(id)" src="TreasureChest.jpg" alt="TresureChest" width="150" height="150" /></div>
+    <div class="col-sm"><img  id="12" onclick="help()" src="needhelp.jpg" alt="Help" width="150" height="150" /></div>
+    <div class="col-sm"><img  id="13" onclick="check(id)" src="TreasureChest.jpg" alt="TresureChest" width="150" height="150" /></div>
+    <div class="col-sm"><img  id="14" onclick="check(id)" src="TreasureChest.jpg" alt="TresureChest" width="150" height="150" /></div>
+</div>
+</div>
+<div class="container">
+    <div class="row">
+    <div class="col-sm" ><img id="15" onclick="check(id)" src="TreasureChest.jpg" alt="TresureChest" width="150" height="150" /></div>
+    <div class="col-sm" ><img id="16" onclick="check(id)" src="TreasureChest.jpg" alt="TresureChest" width="150" height="150" /></div>
+    <div class="col-sm" ><img id="17" onclick="check(id)" src="TreasureChest.jpg" alt="TresureChest" width="150" height="150" /></div>
+    <div class="col-sm" ><img id="18" onclick="check(id)" src="TreasureChest.jpg" alt="TresureChest" width="150" height="150" /></div>
+    <div class="col-sm" ><img id="19" onclick="check(id)" src="TreasureChest.jpg" alt="TresureChest" width="150" height="150" /></div>
+</div>
+</div>
+<div class="container">
+    <div class="row">
+    <div class="col-sm" ><img id="20" onclick="check(id)" src="TreasureChest.jpg" alt="TresureChest" width="150" height="150" /></div>
+    <div class="col-sm" ><img id="21" onclick="check(id)" src="TreasureChest.jpg" alt="TresureChest" width="150" height="150" /></div>
+    <div class="col-sm" ><img id="22" onclick="check(id)" src="TreasureChest.jpg" alt="TresureChest" width="150" height="150" /></div>
+    <div class="col-sm" ><img id="23" onclick="check(id)" src="TreasureChest.jpg" alt="TresureChest" width="150" height="150" /></div>
+    <div class="col-sm" ><img id="24" onclick="check(id)" src="TreasureChest.jpg" alt="TresureChest" width="150" height="150" /></div>
+</div>
+</div>
+        <script>
+            let ids=new Array();
+            for(i=0;i<25;i++)
+            {
+                ids.push(i);
+            }
+            let chestCount=0;
+            let score=0;
+            let lastCheck=12;
+            let treasureLocation =18;
+            function check(position)
+            {
+                var a=parseInt(position);            
+                if(a===treasureLocation)
+                {
+                    document.getElementById(position).src="treusehunt.jpg"
+                    score++;
+                }
+                else{
+                    document.getElementById(position).src="sad.jpg"
+                    chestCount++
+                }
+                lastCheck=a;
+               document.getElementById("chests").innerHTML="Number of chests checked is zero "+chestCount;
+               document.getElementById("score").innerHTML="Score is unknown "+score;
+    
+                
+            }
+            let hlp=""
+            function help()
+            {
+                 rem=lastCheck%5;
+                 div=lastCheck/5;
+                 i=treasureLocation;
+                    if(i%5===rem)
+                    {
+                            if(i<lastCheck)
+                            {
+                                hlp="up"
+                                
+                            }
+                            else if(i>lastCheck)
+                            {
+                                 hlp="down"
+                                 
+                            }
+                            else
+                            {
+                                hlp="Sorry, no help available"
+                               
+                            }
+                        }
+                    
+                        
+                        
+                    else if((i%5 < rem)){
+                        if(parseInt(i/5)===parseInt(div))
+                        {
+                            hlp="left"
+                            
+                        }
+                        
+                        else{
+                            hlp="Sorry, no help available"
+                            
+                        }
+                    
+    
+                    }
+                    else{
+                        if(parseInt(i/5)===parseInt(div))
+                        {
+                            hlp="right"
+                        }
+                        else
+                        hlp="Sorry, no help available"
+                        
+                    }
+                 
+                    document.getElementById("help").innerHTML="Help report "+hlp
+            }
+        </script>    
 </body>
 </html>
 
