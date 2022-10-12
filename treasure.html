@@ -15,7 +15,7 @@
 </head>
 <body>
     <div class="d-flex flex-column">
-    <h2 >Treasure hunt Jaya Lakshmi Medikonda</h2>
+    <h2 >Treasure hunt lokeshreddy donthireddy</h2>
     <div class="p-2"><b>Click on the chests to search for treasure</b></div>
     <div class="p-2" style="background-color:lavenderblush;" id="chests">Number of chests checked is zero</div>
     <div class="p-2" style="background-color:lavender;" id="score">Score is unknown</div>
@@ -90,61 +90,36 @@
                 }
                 lastCheck=a;
                document.getElementById("chests").innerHTML="Number of chests checked is zero "+chestCount;
-               document.getElementById("score").innerHTML="Score is unknown "+score;
-    
-                
+               document.getElementById("score").innerHTML="Score is unknown "+score;     
             }
             let hlp=""
             function help()
-            {
-                 rem=lastCheck%5;
+            {    rem=lastCheck%5;
                  div=lastCheck/5;
                  i=treasureLocation;
                     if(i%5===rem)
                     {
-                            if(i<lastCheck)
-                            {
+                            if(i<lastCheck){
                                 hlp="up"
-                                
-                            }
-                            else if(i>lastCheck)
-                            {
-                                 hlp="down"
-                                 
-                            }
-                            else
-                            {
-                                hlp="Sorry, no help available"
-                               
-                            }
-                        }
-                    
-                        
-                        
+                            }else if(i>lastCheck){
+                                 hlp="down" 
+                            }else {
+                                hlp="Sorry, no help available"}
+                        }   
                     else if((i%5 < rem)){
                         if(parseInt(i/5)===parseInt(div))
                         {
                             hlp="left"
-                            
+                        }else{
+                            hlp="Sorry, no help available" 
                         }
-                        
-                        else{
-                            hlp="Sorry, no help available"
-                            
-                        }
-                    
-    
-                    }
-                    else{
+                    } else{
                         if(parseInt(i/5)===parseInt(div))
                         {
-                            hlp="right"
-                        }
+                            hlp="right"}
                         else
-                        hlp="Sorry, no help available"
-                        
+                        hlp="Sorry, no help available" 
                     }
-                 
                     document.getElementById("help").innerHTML="Help report "+hlp
             }
         </script>    
