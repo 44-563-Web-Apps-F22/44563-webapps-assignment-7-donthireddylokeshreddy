@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html> <head> <style>
+    .flex-container {
+      display: flex;  flex-direction:row;
+      background-color: rgb(246, 16, 16);
+  }
+
+.flex-container > div {  /*div children of the flex container*/
+  background-color: #f1f1f1; 
+  margin: 10px;  padding: 20px;  font-size: 30px;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) { 
+	 .flex-container{
+		 flex-direction:column;
+		 background-color: rgb(118, 34, 115);
+	  }
+	}
+</style>
+<title>Welcome to Cycler</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+
+
+<body>
+    <h1>Lokeshreddy Donthireddy builds a cycler</h1>
+    <div class="flex-container" id="target">
+        <div class="cycler">row item 1</div>   
+        <div class="cycler">row item 2</div>  
+        <div class="cycler">row item 3</div>  
+      </div>
+      <label for="inputElement">Type something: </label>
+              <input class="form-control" type="text" name="input" id="inputElement" value="">
+  <p> Press the button to create an new element of type div and then add it to the container.
+      </p>
+      <button onclick="makeNewDiv()">Add Value</button>
+      <button onclick="get()">GET</button>
+      <button onclick="spin()">SPIN</button>
+  </body>
+ 
+</html>	
