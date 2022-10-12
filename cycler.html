@@ -44,5 +44,34 @@
       <button onclick="get()">GET</button>
       <button onclick="spin()">SPIN</button>
   </body>
- 
+  <script>
+    function makeNewDiv() {
+        let element = document.createElement("div")
+        let value = document.getElementById("inputElement").value
+        element.style.color = "orange"
+        element.innerHTML = value
+        element.className = "cycler"
+
+        let container = document.getElementById("target")
+        container.appendChild(element)
+    }
+    function get() {
+        let cyclerItems = document.getElementsByClassName("cycler")
+
+        if(cyclerItems.length > 0) {
+            cyclerItems[cyclerItems.length-1].remove()
+        }
+    }
+    function spin() {
+        let cyclerItems = document.getElementsByClassName("cycler")
+
+        if(cyclerItems.length > 1) {
+            removedItem = cyclerItems[cyclerItems.length-1]
+            cyclerItems[cyclerItems.length-1].remove()
+            let container = document.getElementById("target")
+
+            container.insertBefore(removedItem, container.firstChild)
+        }
+    }
+</script>
 </html>	
